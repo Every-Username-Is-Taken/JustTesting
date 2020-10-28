@@ -12,6 +12,6 @@ addDigit x c = x*10 + charToNum c
 strToInt :: String -> Int
 strToInt = foldl addDigit 0
 
--- my solution
+-- my solution (One liner)
 strToInt' :: [Char] -> Int
 strToInt' xs = foldl (\x y -> x*10 + y) 0 $ map digitToInt xs
